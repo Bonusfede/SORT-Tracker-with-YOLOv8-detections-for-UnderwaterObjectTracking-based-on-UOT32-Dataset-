@@ -4,3 +4,8 @@ Nel file utils.py sono disponibili le funzioni ausiliare per la generazione del 
 Nel file detections.py si utilizza il modello allenato sul dataset UOT32 e di calcolano le detections per poi salvare in un dataframe in formato .pkl
 Nel file kalmanFilter.py è presente l'intera classe del filtro di kalman con le sue funzioni ausiliarie
 Infine nel file sort_tracker.py avviene il tracking utilizzando i filtri di kalman.
+
+
+
+https://github.com/user-attachments/assets/9be4a8e8-0362-419b-b920-5df9a64af16a
+
