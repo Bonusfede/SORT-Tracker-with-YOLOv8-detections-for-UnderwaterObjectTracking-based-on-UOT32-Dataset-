@@ -6,6 +6,6 @@ Nel file kalmanFilter.py è presente l'intera classe del filtro di kalman con le
 Infine nel file sort_tracker.py avviene il tracking utilizzando i filtri di kalman.
 
 
-
-https://github.com/user-attachments/assets/9be4a8e8-0362-419b-b920-5df9a64af16a
+La gif qua sotto è solamente una preview del tracker in azione:
+![demo_video (1)](https://github.com/user-attachments/assets/f562a3f8-9d2b-43d8-b9da-4414ef2ec044)
 
