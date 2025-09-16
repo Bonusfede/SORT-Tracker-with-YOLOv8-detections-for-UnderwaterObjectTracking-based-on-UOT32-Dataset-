@@ -39,9 +39,9 @@ def conv_video_in_frames(path:str):
 
 
 
-def detect_get_pandas_df(model, images): 
+def detect_get_pandas_df(model, video): 
     # ottiene le rilevazioni da YOLOv8 e le mette in una lista di dataframe
-    results = model.predict(images, conf=0.25, iou=0.45, device='cuda')
+    results = model.predict(video, conf=0.5, iou=0.45, device='cuda')
 
     df_list = []
 

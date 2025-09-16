@@ -57,8 +57,8 @@ def cost_fun(a, b):
     return sum((a[i] - b[i])**2 for i in range(len(a)))
 
 
-imgs, fps = conv_video_in_frames('video_in/ArmyDiver3.mp4')
-df_list = restore_df_pickle('df_pickles/df_ArmyDiver3.pkl')
+imgs, fps = conv_video_in_frames('video_in/JerkbaitBites.mp4')
+df_list = restore_df_pickle('df_pickles/df_JerkbaitBites.pkl')
 total_frames = len(imgs)
 
 kalman_filters = {}
@@ -118,7 +118,7 @@ for frame_idx, df in enumerate(df_list):
     for (class_name, obj_id), (idx, _) in matched_detections.items():
         assig.append((frame_idx, idx, obj_id, class_name))
 
-out = cv2.VideoWriter('video_out/Army3_vcost.mp4', cv2.VideoWriter_fourcc(*'mp4v'), 30,
+out = cv2.VideoWriter('video_out/jerkbait_vcost.mp4', cv2.VideoWriter_fourcc(*'mp4v'), 30,
                       (imgs[0].shape[1], imgs[0].shape[0]))
 
 for i, img in enumerate(imgs):
